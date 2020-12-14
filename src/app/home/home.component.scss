@@ -1,0 +1,218 @@
+$header-size:50px;
+$colorblue:#43556e;
+$font-hel:'Helvetica';
+$font-poppins:'poppins';
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: $font-hel;
+}
+.home{
+    background-image: url(images/home.jpg);
+    height: 720px;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    
+}
+.content{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: $colorblue;
+}
+.content h2{
+    font-size: $header-size;
+}
+.content p{
+    width: 55%;
+    padding-top: 30px;
+}
+
+.services-content{
+    text-align: center;
+
+}
+.services-content h1{
+    color: $colorblue;
+    font-size: 35px;
+    padding-bottom: 3rem;
+    padding-top:6rem ;
+}
+.services-content .line{
+    width: 100px;
+    height: 2px;
+    background-color: $colorblue;
+    margin:auto;
+    margin-bottom: 40px;
+    transition: ease-in-out .5s;
+}
+.services-content .line:hover{
+    width: 140px;
+
+}
+.services-content i{
+    font-size: 50px;
+    color: $colorblue;
+    padding:4rem ;
+
+}
+.services-content  h4{
+    color: $colorblue;
+    padding-bottom:1rem ;
+
+    
+
+    
+}
+.services-content p{
+    font-weight: lighter;
+    padding: 30px;
+    padding-bottom:10rem ;
+
+}
+.reviews{
+    height: 400px;
+    background-color: #fafafa;
+}
+.team .doctor{
+    width: 200px;
+    height: 200px;
+}
+.table-data{
+    overflow-y: scroll;
+    height: 455px;
+    border: 2px solid #dcdcdc;
+    border-radius: 10px;
+}
+table th{
+    position: sticky;
+    top: 0;
+    background-color: #dcdcdc;
+    padding: 20px;
+    border:0;
+    color: $colorblue;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+  }
+  table td{
+    padding: 20px;
+
+
+  }
+  .table-data::-webkit-scrollbar {
+    width: 12px;
+    }
+    .table-data ::-webkit-scrollbar-track {
+    border: 1px solid $colorblue;
+    border-radius: 10px;
+    }
+    .table-data::-webkit-scrollbar-thumb {
+    background: $colorblue;
+    border-radius: 10px;
+    height: 100px !important;
+
+    }
+    .table-data::-webkit-scrollbar-thumb:hover {
+    background: $colorblue;
+    }
+    .cases h2{
+        font-size:40px;
+        text-align: center;
+        padding: 1rem;
+        color: $colorblue;
+        letter-spacing: 4px;
+
+    }
+    .cases{
+        margin-bottom: 7rem;
+    }
+    
+    .cases .line{
+        width: 70px;
+        height: 3px;
+        background-color: $colorblue;
+        margin:auto;
+        margin-top: 10px;
+
+    }
+    .cases p{
+        text-align: center;
+        color: #bbb;
+padding-bottom:3rem ;
+padding-top: 1.5rem;
+    }
+    .works{
+        text-align: center;
+    }
+    .works .icon{
+        width: 80px;
+        height: 80px;
+        background-color: white;
+        border-radius: 50%;
+        margin:auto;
+        border:5px solid $colorblue;
+    }
+    works .icon:hover{
+        background-color: $colorblue;
+
+    }
+    .works .col-md-4{
+        position: relative;
+    }
+    .icon{
+        position: absolute;
+        top:-40px;
+        left:100px;
+
+    }
+    works .icon:hover .icon i{
+        color:#fff;
+    }
+    .icon i{
+        color: $colorblue;
+        padding-top:20px;
+        font-size: 30px;
+    }
+    .works p{
+        padding:30px;
+        margin-top: 1rem;
+    }
+    .card h3{
+        padding-top: 4rem;
+        color: $colorblue;
+        text-transform: uppercase;
+    }
+    .card:hover{
+        background-color: $colorblue;
+        color: #fff;
+    }
+    .card:hover h3{
+        color: #fff;
+    }
+    .works h2{
+        font-size: 35px;
+        color: $colorblue;
+        letter-spacing: 4px;
+
+        
+    }
+    .works .line{
+        width: 100px;
+        height: 3px;
+        background-color: $colorblue;
+        margin:auto;
+        margin-top: 30px;
+    }
+    .card{
+        margin-bottom: 5rem;
+    }
+    .works .header-w p{
+        color: #bbb;
+        margin-bottom: 6rem;
+    }

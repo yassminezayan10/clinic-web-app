@@ -1,0 +1,50 @@
+<section class="contacts">
+    <div class="contacts-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 contact-info" >
+                    <h3>Contact Info</h3>
+                    <p><a> <i class="fas fa-map-marker-alt "></i> 123 William St Suite 801, New York</a></p>
+                    <p><a href="tel:+001-548-159-2491"><i class="fas fa-phone-alt"></i> +001-548-159-2491</a></p>
+                    <p><a href=""> <i class="fas fa-envelope"></i>hello@medizo.com</a></p>
+
+                </div>
+                <div class="col-md-6 form-contact">
+                    <h3>Get In Touch</h3>
+                    <form [formGroup]="message" (ngSubmit)="data()">
+                        <div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+                            <strong>Success!</strong> You Message has been sent Successfully
+                            <button (click)="closeAlert()" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                          </div>
+                        <div class="mb-2">
+                            <label for="exampleFormControlInput1" class="form-label">Name</label>
+                            <input [class.is-valid]="message.get('name').status=='VALID'"  class="form-control" type="text" placeholder="Name" aria-label="Name" formControlName="name" required>
+                            <div *ngIf="message.get('name').errors&&message.get('name').touched" class="text-danger" role="alert">
+                                 Name is required
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input [class.is-valid]="message.get('email').status=='VALID'" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" formControlName="email" required>
+                            <div *ngIf="message.get('email').errors&&message.get('email').touched" class="text-danger" role="alert">
+                                Email is invalid
+                           </div>
+                          </div>
+                          <div class="mb-2">
+                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" formControlName="message_field" required >
+                                <div *ngIf="message.get('message_field').errors&&message.get('message_field').touched" class="text-danger" role="alert">
+                                    message is required
+                               </div>
+
+                            </textarea>
+                          </div>
+                          <button [disabled]="message.invalid" type="submit" class="btn btn1  w-100"> Send Message</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
